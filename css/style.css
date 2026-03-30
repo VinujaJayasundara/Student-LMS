@@ -1,0 +1,292 @@
+/* CSS for navigation bar */
+nav {
+    background-color: #17078b; /* Dark blue background color */
+    border-radius: 15px;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(252, 252, 252); /* Default color for navigation links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(255, 255, 255); /* Change text color on hover */
+    text-decoration: underline; /* Underline text on hover */
+}
+
+/* CSS for centering image */
+.centered-image {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.centered-image img {
+    max-width: 30%; /* Resize image to fit container */
+}
+
+/* CSS for text */
+.col-md-6 {
+    color: #17078b; 
+    font-family: "Times New Roman", Times, serif; /* Times New Roman font */
+    font-size: 27px; /* Resized font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+    padding-top: 10px;
+    text-align: center;
+}
+
+.btn-container {
+    padding: 50px;
+}
+
+.login-body {
+    display: table;
+    height: 100vh;
+    min-height: 100vh;
+}
+.login-wrapper .loginbox {
+    background-color: #efefeff1;
+    border-radius: 30px;
+	display: flex;
+    margin: 1.875rem auto;
+    width: 100%;
+}
+.login-wrapper .loginbox .login-right {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    width: 400px;
+}
+.login-wrapper .loginbox .login-right .login-right-wrap {
+    max-width: 100%;
+    flex: 0 0 100%;
+}
+.login-wrapper .loginbox .login-right h1 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.login-wrapper .loginbox .login-right h6 {
+    text-align: left;
+}
+.account-subtitle {
+    color: #f50000;
+    font-size: 17px;
+    margin-bottom: 1.875rem;
+    text-align: center;
+}
+.login-or {
+	color: #a0a0a0;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	position: relative;
+}
+.or-line {
+	background-color: #e5e5e5;
+	height: 1px;
+	margin-bottom: 0;
+	margin-top: 0;
+	display: block;
+}
+.span-or {
+	background-color: #fff;
+	display: block;
+	left: 50%;
+	margin-left: -20px;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	top: 0;
+	width: 42px;
+}
+
+/*-----------------
+	9. Sidebar
+-----------------------*/
+
+.sidebar {
+    background-color: #3a4352;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    bottom: 0;
+    left: 0;
+    margin-top: 0;
+    position: fixed;
+    top: 60px;
+    transition: all 0.2s ease-in-out 0s;
+    width: 240px;
+    z-index: 1001;
+  }
+  .sidebar.opened {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .sidebar-inner {
+    height: 100%;
+    min-height: 100%;
+    transition: all 0.2s ease-in-out 0s;
+  }
+  .sidebar-menu {
+    padding: 15px;
+  }
+  .sidebar-menu ul {
+    font-size: 15px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  .sidebar-menu li a {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    height: auto;
+    padding: 0 20px;
+  }
+  .sidebar-menu li a:hover {
+    color: #2962ff;
+  }
+  .sidebar-menu > ul > li > a:hover {
+    background-color: #e8e8e8;
+    color: #000;
+  }
+  .sidebar-menu > ul > li.active > a:hover {
+    background-color: #0044ff;
+    color: #fff;
+  }
+  .sidebar-menu li.active a {
+    background-color: #2962ff;
+    color: #fff;
+  }
+  .menu-title {
+    color: #9e9e9e;
+    display: flex;
+    font-size: 14px;
+    opacity: 1;
+    padding: 5px 15px;
+    white-space: nowrap;
+  }
+  .menu-title > i {
+    float: right;
+    line-height: 40px;
+  }
+  .sidebar-menu li.menu-title a {
+    color: #ff9b44;
+    display: inline-block;
+    margin-left: auto;
+    padding: 0;
+  }
+  .sidebar-menu li.menu-title a.btn {
+    color: #fff;
+    display: block;
+    float: none;
+    font-size: 15px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+  }
+  .sidebar-menu ul ul a.active {
+    color: #2962ff;
+    text-decoration: underline;
+  }
+  .mobile_btn {
+    display: none;
+    float: left;
+  }
+  .sidebar .sidebar-menu > ul > li > a span {
+    transition: all 0.2s ease-in-out 0s;
+    display: inline-block;
+    margin-left: 10px;
+    white-space: nowrap;
+  }
+  .sidebar .sidebar-menu > ul > li > a span.chat-user {
+    margin-left: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .sidebar .sidebar-menu > ul > li > a span.badge {
+    margin-left: auto;
+  }
+  .sidebar-menu ul ul a {
+    display: block;
+    font-size: 15px;
+    padding: 7px 10px 7px 45px;
+    position: relative;
+  }
+  .sidebar-menu ul ul {
+    display: none;
+  }
+  .sidebar-menu ul ul ul a {
+    padding-left: 65px;
+  }
+  .sidebar-menu ul ul ul ul a {
+    padding-left: 85px;
+  }
+  .sidebar-menu > ul > li {
+    margin-bottom: 3px;
+    position: relative;
+  }
+  .sidebar-menu > ul > li:last-child {
+    margin-bottom: 0;
+  }
+  .sidebar-menu .menu-arrow {
+    -webkit-transition: -webkit-transform 0.15s;
+    -o-transition: -o-transform 0.15s;
+    transition: transform 0.15s;
+    position: absolute;
+    right: 15px;
+    display: inline-block;
+    font-family: "FontAwesome";
+    text-rendering: auto;
+    line-height: 40px;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    line-height: 18px;
+    top: 11px;
+  }
+  .sidebar-menu .menu-arrow:before {
+    content: "\f105";
+  }
+  .sidebar-menu li a.subdrop .menu-arrow {
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  .sidebar-menu ul ul a .menu-arrow {
+    top: 10px;
+  }
+  .sidebar-menu > ul > li > a {
+    align-items: center;
+    border-radius: 3px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px 15px;
+    position: relative;
+    transition: all 0.2s ease-in-out 0s;
+  }
+  .sidebar-menu ul li a i {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: middle;
+    width: 20px;
+    transition: all 0.2s ease-in-out 0s;
+  }
+  .sidebar-menu ul li.menu-title a i {
+    font-size: 16px !important;
+    margin-right: 0;
+    text-align: right;
+    width: auto;
+  }
+  .sidebar-menu li a > .badge {
+    color: #fff;
+  }
+  
